@@ -66,7 +66,7 @@ param_dist = {
     "subsample": stats.uniform(0.5, 1),
     "colsample_bytree": stats.uniform(0.5, 1)
 }
-rs = RandomizedSearchCV(XGBClassifier(), param_dist, n_iter=10000)
+rs = RandomizedSearchCV(XGBClassifier(), param_dist)
 
 ```
 
